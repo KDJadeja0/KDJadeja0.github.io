@@ -5,44 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karandeep Sinh Jadeja - Resume</title>
     <style>
-        /* Body and General Styles */
+        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f4f7;
+            background-color: #f8f9fa;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #2c3e50;
+            background-color: #34495e;
             color: white;
-            padding: 30px;
+            padding: 50px;
             text-align: center;
+            border-bottom: 5px solid #3498db;
         }
 
         header h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin: 0;
         }
 
         header p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            margin: 10px 0;
         }
 
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
         section {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 20px auto;
             background-color: white;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
         }
 
         h2 {
             color: #2c3e50;
-            font-size: 2rem;
-            margin-bottom: 10px;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
         }
 
         ul {
@@ -51,8 +72,8 @@
         }
 
         ul li {
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            border-bottom: 2px solid #ddd;
         }
 
         ul li:last-child {
@@ -68,18 +89,57 @@
         .skill-item {
             background-color: #3498db;
             color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .skill-item:hover {
+            background-color: #2980b9;
+        }
+
+        .quote {
+            background-color: #3498db;
+            color: white;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+            font-size: 1.3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .image-container img {
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
         }
 
         footer {
             text-align: center;
-            padding: 15px;
-            background-color: #2c3e50;
+            padding: 20px;
+            background-color: #34495e;
             color: white;
-            margin-top: 20px;
+            margin-top: 40px;
         }
+
+        footer p {
+            font-size: 1rem;
+        }
+
     </style>
 </head>
 <body>
@@ -87,7 +147,10 @@
 <header>
     <h1>Karandeep Sinh Jadeja</h1>
     <p>Data Analyst | Business Analyst</p>
-    <p>Email: <a href="mailto:karandeepsinhjadeja@gmail.com" style="color:white;">karandeepsinhjadeja@gmail.com</a> | LinkedIn: <a href="http://www.linkedin.com/in/karandeepsinhjadeja" target="_blank" style="color:white;">linkedin.com/in/karandeepsinhjadeja</a></p>
+    <div class="contact-links">
+        <p>Email: <a href="mailto:karandeepsinhjadeja@gmail.com">karandeepsinhjadeja@gmail.com</a> | 
+        LinkedIn: <a href="http://www.linkedin.com/in/karandeepsinhjadeja" target="_blank">linkedin.com/in/karandeepsinhjadeja</a></p>
+    </div>
 </header>
 
 <section>
@@ -96,12 +159,12 @@
         <li>
             <strong>University of Exeter</strong> - MSc Business Analytics (Merit) <br>
             Sept 2023 – Sept 2024 | Global Excellence Scholarship<br>
-            Key Modules: Programming, Database Technologies, Analytics, Visualization, Marketing Analytics, Environmental Analytics.
+            Key Modules: Programming, Database Technologies, Statistics, Analytics and Visualization, Marketing Analytics, Strategic and HR Analytics, Environmental Analytics, Design Intelligence.
         </li>
         <li>
             <strong>Saurashtra University</strong> - Bachelor of Commerce (CGPA: 7.0) <br>
             Jul 2019 – Apr 2022 <br>
-            Modules: Accounting, Economics, Statistics, HR Management, Entrepreneurship.
+            Modules: Accounting, Economics, Statistics, Human Resource Management, Entrepreneurship, Corporate Law.
         </li>
     </ul>
 </section>
@@ -111,15 +174,32 @@
     <ul>
         <li>
             <strong>ARK Recruitment EST</strong> - Recruitment Intern (Oct 2024 - Nov 2024) <br>
-            - Analyzed 3,500+ candidate profiles using Power BI and SQL. <br>
-            - Built dashboards to track KPIs, enhancing data visibility. <br>
-            - Collaborated with 11+ clients to optimize sourcing strategies.
+            • Analyzed a database of over 3,500 candidate profiles using Power BI and SQL, extracting insights to match client requirements effectively. <br>
+            • Built and maintained dashboards to track recruitment KPIs, enhancing data visibility. <br>
+            • Collaborated with 11+ clients to develop actionable data-driven solutions and optimize sourcing strategies.
         </li>
         <li>
             <strong>Trainity</strong> - Data Analyst Trainee (Apr 2023 - Jun 2023) <br>
-            - Improved recruitment efficiency by 16% through analytics. <br>
-            - Increased engagement by 23% with Instagram User Analytics. <br>
-            - Conducted IMDB Movie Analysis, delivering insights with Python.
+            • Leveraged Python, SQL, and Power BI to analyze 3,500+ profiles in the Hiring Process Analytics project, increasing recruitment efficiency by 16%. <br>
+            • Delivered insights for Instagram User Analytics, improving user engagement by 23%. <br>
+            • Conducted IMDB Movie Analysis, delivering data-driven recommendations for content strategies using Python-based visualizations.
+        </li>
+        <li>
+            <strong>Unschool</strong> - Youth Influencer (Mar 2023 - Apr 2023) <br>
+            • Spearheaded a series of four webinars with an average attendance of 27 participants, effectively elevating brand interaction and loyalty. <br>
+            • Utilized social media analytics to devise and execute marketing campaigns, leading to a 9% surge in audience growth and enhanced campaign reach.
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Master's Thesis Project</h2>
+    <ul>
+        <li>
+            <strong>Topic:</strong> Evaluating the Effectiveness of Machine Learning and Deep Learning Techniques in Predicting Stock Price Changes <br>
+            • Developed a hybrid forecasting model using econometric methods and ML/DL techniques, achieving a MAPE of 2.8% for Apple Inc.'s stock prediction. <br>
+            • Integrated macroeconomic indicators and sentiment analysis from Twitter and Google Trends to enhance predictive accuracy. <br>
+            • Used ARIMA for short-term forecasting and LSTM for long-term dependencies, optimizing accuracy during market fluctuations.
         </li>
     </ul>
 </section>
@@ -137,20 +217,8 @@
     </div>
 </section>
 
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <strong>Master’s Thesis:</strong> Predicting Stock Price Changes with Machine Learning<br>
-            - Achieved a MAPE of 2.8% using hybrid models (ARIMA, LSTM).<br>
-            - Integrated sentiment analysis and macroeconomic indicators.<br>
-        </li>
-        <li>
-            <strong>Green Consulting Society:</strong> Sustainability Projects<br>
-            - Helped businesses adopt eco-friendly practices.<br>
-            - Worked with 7+ companies to implement sustainability strategies.
-        </li>
-    </ul>
+<section class="quote">
+    <p>"The best way to predict the future is to create it." – Abraham Lincoln</p>
 </section>
 
 <section>
@@ -159,7 +227,13 @@
         <li>Powerlifting (Lifting at 110 kg, competing at club level)</li>
         <li>Social Hockey (Team Captain at the University of Exeter)</li>
         <li>Fintech Society (Organized 10+ events, increasing attendance by 39%)</li>
+        <li>Green Consulting (Promoting sustainability and eco-friendly business solutions)</li>
     </ul>
+</section>
+
+<section class="image-container">
+    <img src="https://via.placeholder.com/450x250.png?text=Professional+Image" alt="Professional Image">
+    <img src="https://via.placeholder.com/450x250.png?text=Skills+Image" alt="Skills Image">
 </section>
 
 <footer>
